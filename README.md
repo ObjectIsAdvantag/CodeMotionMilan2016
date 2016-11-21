@@ -1,12 +1,10 @@
 # Code Motion conference, Milan 2016
 
 **If you're attending the conference, 
-take a look to the [Cisco DevNet presence](https://github.com/CiscoDevNet/codemotion-milan-2016) 
-join the keynote, our 3 talks, and take a codelabs,
+check [Cisco DevNet presence](https://github.com/CiscoDevNet/codemotion-milan-2016): 
+join the keynote, attend a talk, and take codelabs)**
 
-If you're not attending, join us at [DevNet - Cisco Developer Program](https://developer.cisco.com).**
-
-> To give a try to the CodeMotion Voice Machine
+> To give a try to the CodeMotion Milan Interactive Voice Machine
 >
 >    call **+39-051-042-1150**
 
@@ -32,7 +30,7 @@ Text your email to the +1 414-999-0205 (featured: Tropo bi-directional SMS suppo
 - note that [Tropo.eu](https://blog.tropo.eu/2016/09/20/tropo-in-europe-what-it-means/) has now launched, you can pick an SMS-enabled phone number in Europe,
 
 Launch your favorite CiscoSpark client (Web, iOS, android, windows or mac)
-- you're now part of a Spark Room, (featured: Cisco Spark Memverships API) 
+- you're now part of a Cisco Spark Room, (featured: Cisco Spark Memverships API) 
 - get real time info what's going on (featured: Cisco Spark Bot accounts & WebHook API)
 - check if the session you're attending has begun: /next, /now
 
