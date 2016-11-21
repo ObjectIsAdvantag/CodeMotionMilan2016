@@ -112,6 +112,9 @@ module.exports = {
         if (!now) {
             now = new Date(Date.now());
         }
+        else {
+            now = new Date(now);
+        }
 
         var events = [];
         sorted.forEach(function (item) {

@@ -275,7 +275,7 @@ function extractEmail(phrase) {
 }
 
 function fetchNextActivities() {
-    var url = "https://pixelscamp.herokuapp.com/next";
+    var url = "https://codemotion-api.herokuapp.com/next";
     var response = requestJSONviaGET(url);
     if (response && response instanceof Array) {
         return response;
@@ -323,7 +323,7 @@ if (currentCall) {
         // check email is present,
         var extractedEmail = extractEmail(input);
         if (!extractedEmail) { // send Welcome message
-            say("Welcome to the Pixels Camp 2016. Text your email to join the Cisco Spark room, and get support from DevNet mentors.");
+            say("Welcome to CodeMotion 2016, Text your email to get support from Cisco DevNet mentors.");
             info("sent welcome SMS to : +" + currentCall.callerID);
         }
         else { // register to the Sandbox Room
@@ -353,7 +353,7 @@ if (currentCall) {
         // Speak a welcome message
         debug("incoming call from: " + currentCall.callerID);
         wait(1000);
-        say("Welcome to the Pixels Camp 2016. It is now " + timeAtEvent() + " in Lisbon.", {
+        say("Welcome to CodeMotion 2016. It is now " + timeAtEvent() + " in Milan.", {
             voice: currentVoice
         });
         info("spoke the welcome message to: +" + currentCall.callerID);
@@ -424,6 +424,7 @@ if (currentCall) {
                         });
                         event.onHangup(function() {
                             debug("user has hanged up +" + currentCall.callerID);
+                            num = nbActivities; // Stop IVR
                         });
                     }
                 });
@@ -545,11 +546,11 @@ else {
     // Checking current time
     var now = new Date(Date.now());
 
-    debug("it is now " + (now.getHours() +1) + " hours and " + now.getMinutes() + " minutes in Lisbon");
+    debug("it is now " + (now.getHours() +1) + " hours and " + now.getMinutes() + " minutes in Milan");
 
     debug("CET time is: " + convertCET(Date.now()).toLocaleString());
 
-    debug("time in Lisbon: " + timeAtEvent());
+    debug("time in Milan: " + timeAtEvent());
 
     // Checking session list
     var listOfActivities = fetchNextActivities();
