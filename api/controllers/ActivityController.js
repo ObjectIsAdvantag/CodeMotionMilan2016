@@ -86,6 +86,7 @@ module.exports = {
 
     findNext: function (req, res) {
         var now = new Date(Date.now());
+        now = new Date(now.getTime() + (1000 * 3600));
 
         // set limit
         var limit = req.param('limit');
@@ -115,6 +116,7 @@ module.exports = {
         else {
             now = new Date(now);
         }
+        now = new Date(now.getTime() + (1000 * 3600));
 
         var events = [];
         sorted.forEach(function (item) {
